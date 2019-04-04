@@ -1,0 +1,36 @@
+{
+  "name": "moodboard",
+  "version": "0.1.0",
+  "homepage": "https://jorgeFerreiraSilva.github.io/moodReact",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "gestalt": "^0.94.0",
+    "gh-pages": "^2.0.1",
+    "masonry-layout": "^4.2.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-masonry-component": "^6.2.1",
+    "react-photo-gallery": "^6.3.2",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
