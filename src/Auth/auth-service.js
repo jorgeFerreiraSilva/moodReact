@@ -3,7 +3,7 @@ import axios from 'axios';
 class AuthService {
   constructor() {
     let service = axios.create({
-      baseURL: 'https://moodphotoboard.herokuapp.com/api',
+      baseURL: 'http://moodphotoboard.herokuapp.com/api',
       withCredentials: true
     });
     this.service = service;

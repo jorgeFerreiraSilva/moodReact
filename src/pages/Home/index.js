@@ -20,7 +20,7 @@ class Home extends Component {
 
 
   componentDidMount() {
-    axios.get('https://moodphotoboard.herokuapp.com/api/pictures/')
+    axios.get('http://moodphotoboard.herokuapp.com/api/pictures/')
       .then((response) => {
         const pictures = response.data;
         this.setState({ pictures });

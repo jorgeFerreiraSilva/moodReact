@@ -22,13 +22,13 @@ class Profile extends Component {
 
 	componentDidMount() {
 		const userId = this.props.match.params.id;
-    axios.get(`https://moodphotoboard.herokuapp.com/api/pictures/users/${userId}`)
+    axios.get(`http://moodphotoboard.herokuapp.com/api/pictures/users/${userId}`)
       .then((response) => {
         const pictures = response.data;
         this.setState({ pictures });
       })
 			.catch(err => console.log(err));
-			axios.get(`https://moodphotoboard.herokuapp.com/api/users/${userId}`)
+			axios.get(`http://moodphotoboard.herokuapp.com/api/users/${userId}`)
       .then((response) => {
         const { name, description, pathPicture } = response.data;
         this.setState({ name, description, pathPicture });
